@@ -1,0 +1,18 @@
+<h3>Index</h3>
+
+<p>{{link-to 'New guess_the_square' 'guess_the_squares.new'}}</p>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>Score</th>
+    <th>Difficulty</th>
+  </tr>
+  {{#each}}
+    <tr>
+      <td>{{link-to id 'guess_the_squares.show' this}}</td>
+      <td>{{score}}</td>
+      <td>{{difficulty}}</td>
+    </tr>
+  {{/each}}
+</table>

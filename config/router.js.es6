@@ -9,6 +9,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('guess_the_squares', function() {
+    this.route('new');
+    this.route('show', {path: ':guess_the_square_id'});
+    this.route('edit', {path: ':guess_the_square_id/edit'});
+  });
 });
 
 export default Router;

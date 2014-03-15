@@ -1,0 +1,11 @@
+<div>
+  <label for="">Score</label>
+  {{input value=score}}
+</div>
+<div>
+  <label for="">Difficulty</label>
+  {{input value=difficulty}}
+</div>
+
+<button type="submit" {{action save this}}>Save</button>
+<button type="submit" {{action cancel this}}>Cancel</button>
